@@ -18,11 +18,11 @@
 <body>
     <?php
     $db = new MyDB();
-    $data_warga = $Db->show();
+    $data_warga = $db->show();
 
     if(isset($_POST['daftar'])){
         // echo "Tombol Daftar Telah di Klik!";
-        $noktp = $_POST['no_ktp'];
+        $no_ktp = $_POST['no_ktp'];
         $nama = $_POST['nama_lengkap'];
         $alamat = $_POST['alamat_lengkap'];
         $nohp = $_POST['no_hp'];
